@@ -1,5 +1,4 @@
 const Product = require('../schema/productSchema');
-// const { getProductById } = require('../services/productService');
 const BadRequestError = require('../utils/badRequestError');
 const InternalServerError = require('../utils/InternalServerError');
 
