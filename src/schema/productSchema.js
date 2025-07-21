@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { applyTimestamps } = require('./userSchema');
+// const { applyTimestamps } = require('./userSchema');
 
 const productSchema = new mongoose.Schema({
     productName: {
@@ -18,6 +18,11 @@ const productSchema = new mongoose.Schema({
     price: {
         type: Number,
         required: [true, "Product price is required"]
+    },
+    quantity: {
+        type: Number,
+        required: true, 
+        default: 10
     },
     category: {
         type: String,
