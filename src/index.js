@@ -28,7 +28,7 @@ app.use('/carts', cartRouter);
 app.use('/auth', authRouter)
 app.use('/products', productRouter)
 
-app.get('/ping', isLoggedIn, (req, res) => {
+app.get('/ping', (req, res) => {
     console.log(req.body);
     console.log(req.cookies)
     return res.json({message: "pong"})
