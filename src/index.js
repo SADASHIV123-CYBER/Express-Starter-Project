@@ -47,19 +47,5 @@ app.post('/photo', uploader.single('incommingFile'), async (req, res) => {
 app.listen(ServerConfig.PORT, async () => {
     await connectDB();
     console.log(`Server started at port ${ServerConfig.PORT}`);
-
-    // const newUser = await User.create({
-    //     email: 'a@b.com',
-    //     password: '123456',
-    //     firstName: 'johnathan',
-    //     lastName: 'majors',
-    //     mobileNumber: '1234567890'
-    // });
-
-    // console.log("Created new user");
-    // console.log(newUser);
-
 })
 
-// sadashivkale604
-// gtSc4T9KrjrArpCa
